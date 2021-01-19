@@ -1,0 +1,22 @@
+{
+  "name": "wordtoy",
+  "version": "0.1.0",
+  "description": "\"Can anyone think of any words which...\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/wordtoy.git"
+  },
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/wordtoy/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/wordtoy#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
