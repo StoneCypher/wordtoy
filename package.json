@@ -1,12 +1,13 @@
 {
   "name": "wordtoy",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "\"Can anyone think of any words which...\"",
   "main": "index.js",
   "scripts": {
-    "site": "rimraf -f docs && mkdir docs && cp -r src/html/* docs/",
+    "site": "rimraf -f build && mkdir build && rimraf -f docs && mkdir docs && cp -r src/html/* docs/",
     "typescript": "tsc --build tsconfig.json",
-    "build": "npm run site && npm run typescript",
+    "rollup": "rollup -c",
+    "build": "npm run site && npm run typescript && npm run rollup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/StoneCypher/wordtoy#readme",
   "devDependencies": {
     "rimraf": "^3.0.2",
+    "rollup": "^2.36.2",
     "typescript": "^4.1.3"
   }
 }
